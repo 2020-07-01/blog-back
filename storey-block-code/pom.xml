@@ -8,8 +8,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>storey-block-code</artifactId>
+    <packaging>pom</packaging>
+    <groupId>com.block.code</groupId>
+    <modules>
+        <module>mopsz-admin-entity</module>
 
+        <module>mopsz-data-entity</module>
+        <module>mopsz-user-entiry</module>
+        <module>mopsz-admin-service</module>
+        <module>mopsz-data-service</module>
+    </modules>
 
 </project>
