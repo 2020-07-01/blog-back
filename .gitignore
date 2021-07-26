@@ -1,0 +1,42 @@
+.svn/
+target/
+test-output/
+*.class
+.classpath
+.project
+.settings/
+tmp
+temp
+*.log
+antx.properties
+.idea/
+*.iml
+htdocs
+release
+
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.idea/*.xml
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
