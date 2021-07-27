@@ -1,4 +1,4 @@
-package com.facade;
+package com.facade.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/v1/article")
 public class ArticleController {
 
-    public
+
 
 }

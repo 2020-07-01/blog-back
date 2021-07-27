@@ -12,6 +12,17 @@
     <artifactId>blog-facade</artifactId>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com</groupId>
+            <artifactId>blog-bean</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com</groupId>
+            <artifactId>blog-content</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -21,7 +32,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
 
     </dependencies>
 

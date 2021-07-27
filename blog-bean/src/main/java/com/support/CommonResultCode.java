@@ -11,7 +11,9 @@ public enum CommonResultCode implements ResultCode {
      *
      */
     SUCCESS("000", "操作成功!"),
-    SYSTEM_ERROR("999", "系统错误");
+    SYSTEM_ERROR("111", "系统异常!"),
+    PARAM_ERROR("222", "参数异常!"),
+    ERROR("999", "操作失败!");
 
     private final String code;
 
