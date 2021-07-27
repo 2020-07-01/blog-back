@@ -6,7 +6,13 @@
 
     <groupId>com</groupId>
     <artifactId>blog-back</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>blog-facade</module>
+        <module>blog-bean</module>
+        <module>blog-content</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,6 +30,7 @@
         <spring.cloud.alibaba.version>2.2.1.RELEASE</spring.cloud.alibaba.version>
         <spring.cloud.version>Hoxton.SR6</spring.cloud.version>
         <spring.boot.starter.web.version>2.3.4.RELEASE</spring.boot.starter.web.version>
+        <spring.boot.starter.data.mongodb.versoin>2.3.4.RELEASE</spring.boot.starter.data.mongodb.versoin>
 
     </properties>
     <dependencyManagement>
@@ -51,6 +58,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring.boot.starter.web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-mongodb</artifactId>
+                <version>${spring.boot.starter.data.mongodb.versoin}</version>
             </dependency>
 
             <!--springboot-mybatis-->
