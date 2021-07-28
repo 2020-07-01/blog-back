@@ -3,9 +3,7 @@ package com.facade;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @ClassName : BlogFacadeApplication
@@ -15,6 +13,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
  */
 @EnableConfigurationProperties
 @SpringBootApplication
+@EnableDiscoveryClient
 public class BlogFacadeApplication {
 
     public static void main(String[] args) {
