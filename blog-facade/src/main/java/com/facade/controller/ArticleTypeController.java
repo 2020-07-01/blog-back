@@ -32,6 +32,12 @@ public class ArticleTypeController {
         return Response.success();
     }
 
+    @DeleteMapping(value = "/delete")
+    public Response<?> delete(@RequestParam(value = "id", required = true) String id) {
+        articleTypeService.deleteById(id);
+        return Response.success();
+    }
+
     @Autowired
     private void setArticleTypeService(ArticleTypeServiceImpl articleTypeService) {
         this.articleTypeService = articleTypeService;

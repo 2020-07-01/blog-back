@@ -1,5 +1,7 @@
 package com.content.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.lang.reflect.ParameterizedType;
@@ -14,9 +16,21 @@ public abstract class AbstractService<T> {
 
     private Class<T> clazz = (Class<T>) (((ParameterizedType) this.getClass().getGenericSuperclass()).getActualTypeArguments()[0]);
 
+    public MongoTemplate mongoTemplate;
+
+    @Autowired
+    private void setMongoTemplate(MongoTemplate mongoTemplate) {
+        this.mongoTemplate = mongoTemplate;
+    }
+
+    public Class getClazz() {
+        return clazz;
+    }
+
     public String getCollectionName() {
         Document document = clazz.getAnnotation(Document.class);
         return document.collation();
     }
+
 
 }
