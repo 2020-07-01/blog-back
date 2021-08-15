@@ -13,8 +13,8 @@
         <module>blog-bean</module>
         <module>blog-content</module>
         <module>blog-gateway</module>
-        <module>blog-search</module>
         <module>blog-sentinel</module>
+        <module>blog-admin</module>
     </modules>
 
     <parent>
