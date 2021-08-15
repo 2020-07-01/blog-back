@@ -23,14 +23,9 @@ public abstract class AbstractService<T> {
         this.mongoTemplate = mongoTemplate;
     }
 
-    public Class getClazz() {
-        return clazz;
-    }
-
     public String getCollectionName() {
         Document document = clazz.getAnnotation(Document.class);
-        return document.collation();
+        return document.collection();
     }
-
 
 }

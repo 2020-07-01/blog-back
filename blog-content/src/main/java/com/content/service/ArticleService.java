@@ -11,9 +11,11 @@ import com.support.Pageable;
  */
 public interface ArticleService {
 
-    Pageable<?> page(Pageable<?> pageable);
+    Pageable<?> page(Article article, Pageable<?> pageable);
 
     void saveArticle(Article article);
 
     void delete(String id);
+
+    Article getArticleById(String articleId);
 }

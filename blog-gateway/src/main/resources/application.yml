@@ -1,0 +1,17 @@
+server:
+  port: 8082 #端口
+spring:
+  application:
+    name: api-gateway-server #服务名称
+  cloud:
+    #nacos:
+      #discovery:
+        #server-addr: 127.0.0.1:8848
+
+    #配置SpringCloudGateway的路由
+    gateway:
+      routes:
+        - id: order-service
+          uri: http://127.0.0.1:8081
+          predicates:
+            - Path=/product/**

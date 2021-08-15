@@ -1,17 +1,16 @@
 server:
-  port: 8080
+  port: 8082
   servlet:
     context-path: /blog-facade
 spring:
   application:
     name: blog-facade
-
-
   data:
     mongodb:
-      uri: mongodb://localhost:27017/blog
-
+      uri: mongodb://localhost:27017/blog?readPreference=secondaryPreferred
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+
+

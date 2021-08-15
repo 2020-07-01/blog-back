@@ -13,13 +13,13 @@ import java.util.Date;
  * @Description :
  */
 @Data
-@Document(collation = "articleType")
+@Document(collection = "articleType")
 public class ArticleType {
 
     @Id
     private String articleTypeId;
 
-    private String articleTypeTitle;
+    private String articleTypeName;
 
     private Date createTime;
 }
