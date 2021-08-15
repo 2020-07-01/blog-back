@@ -1,7 +1,8 @@
-package com;
+package com.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @ClassName : AdminApplication
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description :
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class AdminApplication {
 
     public static void main(String[] args) {
