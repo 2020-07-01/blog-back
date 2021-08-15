@@ -32,9 +32,9 @@ public class InitController {
     @Value("${java1234.name}")
     private String name;
 
-    @GetMapping(value = "/name")
+    @RequestMapping(value = "/name")
     public String getName(){
-        return name;
+        return "真厉害";
     }
 
     @GetMapping(value = "/type")
